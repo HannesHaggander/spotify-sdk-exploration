@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/navigation_authentication">
+
+    <fragment
+        android:id="@+id/navigation_recommendation"
+        android:name="com.towerowl.spotifytest.ui.RecommendedFragment"
+        android:label="@string/recommendation"
+        tools:layout="@layout/fragment_recommended" />
+
+    <fragment
+        android:id="@+id/navigation_authentication"
+        android:name="com.towerowl.spotifytest.ui.AuthenticationFragment"
+        android:label="@string/authentication"
+        tools:layout="@layout/fragment_authentication" />
+
+</navigation>
